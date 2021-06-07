@@ -1,0 +1,44 @@
+.box {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    animation: spin 5s ease-in, spin 5s ease-in-out 2s;
+    animation-timing-function: 2s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+        }
+    
+}
+.box__first {
+    background-color: black;
+    @include border();
+    font-weight: bold;
+    width: 100px;
+    height: 100px;
+    padding: 100px;
+    margin: 50px;
+    
+}
+.box__second {
+    background-color: red;
+    @include border()
+    font-weight: bold;
+    width: 100px;
+    height: 100px;
+    padding: 100px;
+    margin: 50px;
+
+
+}
+.box__third {
+    background-color: orange;
+    @include border()
+    font-weight: bold;
+    width: 100px;
+    height: 100px;
+    padding: 100px;
+    margin: 50px;
+}
